@@ -1,3 +1,6 @@
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -11,11 +14,12 @@ set wildmenu
 set ignorecase
 set smartcase
 set incsearch
+set nofoldenable
 set showcmd
 set visualbell
 set ttyfast
 set number
 set cursorline
+set notimeout
 set ruler
-syntax on
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class

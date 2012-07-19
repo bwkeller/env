@@ -1,10 +1,21 @@
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set nocompatible
 set autoindent
 set smartindent
 set showmatch
-set vb
+set showmode
+set scrolloff=5
+set wildmenu
+set ignorecase
+set smartcase
+set incsearch
+set showcmd
+set visualbell
+set ttyfast
+set number
+set cursorline
 set ruler
 syntax on
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class

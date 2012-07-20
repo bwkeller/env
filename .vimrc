@@ -22,4 +22,5 @@ set number
 set cursorline
 set notimeout
 set ruler
+colorscheme koehler
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class

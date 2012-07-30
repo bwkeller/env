@@ -99,3 +99,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 alias gasstat='cat gasoline.log | grep '\''Calculating Gravity'\'' | tail'
 PATH=$PATH:~/bin
+alias df='pydf'

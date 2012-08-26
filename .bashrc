@@ -100,3 +100,4 @@ fi
 alias gasstat='cat gasoline.log | grep '\''Calculating Gravity'\'' | tail'
 PATH=$PATH:~/bin
 alias df='pydf'
+alias ipy='ipython'

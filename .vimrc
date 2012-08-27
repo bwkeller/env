@@ -23,6 +23,8 @@ set notimeout
 set ruler
 set spelllang=en_gb
 nmap <silent> <leader>s :set spell!<CR>
+nnoremap <F5> :GundoToggle<CR>
 colorscheme koehler
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap
+autocmd BufRead *.md setlocal textwidth=80 formatoptions+=t wrap

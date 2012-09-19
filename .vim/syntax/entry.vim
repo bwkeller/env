@@ -14,6 +14,16 @@ unlet! b:current_syntax
 let s:cpo_save = &cpo
 set cpo&vim
 
+syn match entryDate '\d\{4}-\d\{2}-\d\{2}'
+syn match entryTask '.*' contained
+syn match entryStatus '.*' contained
+syn match entryTaskHead "task:" nextgroup=entryTask 
+syn match entryStatusHead "- status: " nextgroup=entryStatus 
+
+syn keyword entryHead todo 
+syn keyword entryHead date nextgroup=entryDate
+
+syn region entryTodo start="todo:" end="body: |" contains=entryStatusHead,entryTaskHead
 syn region entryBody matchgroup=entryHead start="body: |$" end="\%$" contains=markdownLineStart, @markdownInline
 
 
@@ -72,17 +82,6 @@ syn region markdownCode matchgroup=markdownCodeDelimiter start="`" end="`" trans
 syn region markdownCode matchgroup=markdownCodeDelimiter start="`` \=" end=" \=``" keepend contains=markdownLineStart
 
 syn match markdownEscape "\\[][\\`*_{}()#+.!-]"
-
-syn match entryDate '\d\{4}-\d\{2}-\d\{2}'
-syn match entryTask '.*' contained
-syn match entryStatus '.*' contained
-syn match entryTaskHead "task:" nextgroup=entryTask 
-syn match entryStatusHead " - status: " nextgroup=entryStatus 
-
-syn keyword entryHead todo 
-syn keyword entryHead date nextgroup=entryDate
-
-syn region entryTodo start="todo:" end="body: |" contains=entryStatusHead,entryTaskHead
 
 hi def link markdownH1                    htmlH1
 hi def link markdownH2                    htmlH2

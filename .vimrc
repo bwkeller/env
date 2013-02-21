@@ -1,6 +1,9 @@
 call pathogen#infect()
 syntax on
 filetype plugin indent on
+set laststatus=2
+set encoding=utf-8
+set t_Co=256
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -23,6 +26,7 @@ set notimeout
 set ruler
 set spelllang=en_gb
 set hlsearch
+let g:Powerline_symbols = "unicode"
 nmap \q :nohlsearch<CR>
 nmap j gj
 nmap k gk

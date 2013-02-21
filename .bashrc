@@ -102,3 +102,4 @@ PATH=$PATH:~/bin
 alias df='pydf'
 alias ipy='ipython'
 alias loglast='vim `ls entries/* | tail -n 1`'
+alias cm='checkoutmanager'

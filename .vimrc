@@ -22,6 +22,8 @@ set cursorline
 set notimeout
 set ruler
 set spelllang=en_gb
+nmap j gj
+nmap k gk
 nmap <silent> <leader>s :set spell!<CR>
 nnoremap <F5> :GundoToggle<CR>
 colorscheme koehler

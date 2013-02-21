@@ -26,8 +26,10 @@ set hlsearch
 nmap \q :nohlsearch<CR>
 nmap j gj
 nmap k gk
+nmap ; :CtrlPBuffer<CR>
 nmap <silent> <leader>s :set spell!<CR>
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :NERDTreeToggle<CR>
 colorscheme koehler
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap

@@ -27,7 +27,7 @@ set ruler
 set spelllang=en_gb
 set hlsearch
 let g:Powerline_symbols = "unicode"
-nmap \q :nohlsearch<CR>
+nmap <leader>q :nohlsearch<CR>
 nmap j gj
 nmap k gk
 nmap ; :CtrlPBuffer<CR>

@@ -1,6 +1,7 @@
 call pathogen#infect()
 syntax on
 filetype plugin indent on
+set diffopt+=iwhite
 set laststatus=2
 set encoding=utf-8
 set t_Co=256

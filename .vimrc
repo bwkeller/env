@@ -28,7 +28,6 @@ set ruler
 set spelllang=en_gb
 set hlsearch
 set background=dark
-set colorcolumn=80
 let g:Powerline_symbols = "unicode"
 nmap <leader>q :nohlsearch<CR>
 nmap j gj

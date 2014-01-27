@@ -7,3 +7,5 @@
 	name = Ben Keller
 [merge]
 	tool = vimdiff
+[push]
+	default = simple

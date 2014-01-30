@@ -28,6 +28,8 @@ set notimeout
 set ruler
 set spelllang=en_gb
 set hlsearch
+set background=dark
+set colorcolumn=80
 let g:Powerline_symbols = "unicode"
 nmap <leader>q :nohlsearch<CR>
 nmap j gj
@@ -36,7 +38,7 @@ nmap ; :CtrlPBuffer<CR>
 nmap <silent> <leader>s :set spell!<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
-colorscheme koehler
+colorscheme solarized
 autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.md setlocal smartindent textwidth=80 formatoptions+=t wrap

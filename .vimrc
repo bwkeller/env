@@ -8,6 +8,7 @@ set t_Co=256
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 set nocompatible
 set autoindent
 set smartindent
@@ -41,3 +42,4 @@ autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,ex
 autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.md setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.entry setlocal smartindent textwidth=80 formatoptions+=t wrap
+autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown

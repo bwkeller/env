@@ -105,3 +105,4 @@ alias loglast='vim `ls entries/* | tail -n 1`'
 alias cm='checkoutmanager'
 alias httpy='python -m SimpleHTTPServer'
 alias fox2='ssh -A -t imp ssh -A -t fox2'
+alias tmux="TERM=screen-256color-bce tmux"

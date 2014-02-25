@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/kellerbw/Research/data/coolingblast_resolution/runs_physical_1500Msol'
+let g:netrw_dirhist_2='/home/kellerbw/.config/ipython/profile_default'
+let g:netrw_dirhist_3='/home/kellerbw/papers/subgrid_conducting_feedback'
+let g:netrw_dirhist_4='/home/kellerbw/Research/gasoline/test/data'

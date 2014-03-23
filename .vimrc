@@ -8,6 +8,7 @@ set t_Co=256
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 set nocompatible
 set autoindent
 set expandtab
@@ -29,7 +30,6 @@ set ruler
 set spelllang=en_gb
 set hlsearch
 set background=dark
-set colorcolumn=80
 let g:Powerline_symbols = "unicode"
 nmap <leader>q :nohlsearch<CR>
 nmap j gj
@@ -43,3 +43,4 @@ autocmd BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,ex
 autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.md setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.entry setlocal smartindent textwidth=80 formatoptions+=t wrap
+autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown

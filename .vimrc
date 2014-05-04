@@ -11,6 +11,7 @@ set shiftwidth=4
 set expandtab
 set nocompatible
 set autoindent
+set expandtab
 set smartindent
 set showmatch
 set showmode

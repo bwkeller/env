@@ -8,3 +8,7 @@
 	name = Ben Keller
 [merge]
 	tool = vimdiff
+[push]
+	default = simple
+[github]
+    user = bwkeller

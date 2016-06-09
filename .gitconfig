@@ -12,3 +12,5 @@
 	default = simple
 [github]
     user = bwkeller
+[core]
+	editor = vim

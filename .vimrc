@@ -32,10 +32,10 @@ set hlsearch
 set background=dark
 let g:Powerline_symbols = "unicode"
 nmap <leader>q :nohlsearch<CR>
-nmap j gj
-nmap k gk
 nmap ; :CtrlPBuffer<CR>
 nmap <silent> <leader>s :set spell!<CR>
+nmap j gj
+nmap k gk
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
 colorscheme solarized

@@ -1,6 +1,7 @@
 call pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
+set notermguicolors
 set diffopt+=iwhite
 set laststatus=2
 set encoding=utf-8

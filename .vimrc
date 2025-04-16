@@ -1,4 +1,10 @@
-"call pathogen#infect()
+call plug#begin()
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'preservim/nerdtree'
+    Plug 'preservim/nerdcommenter'
+call plug#end()
+
 syntax enable
 filetype plugin indent on
 set notermguicolors
@@ -31,7 +37,7 @@ set ruler
 set spelllang=en_gb
 set hlsearch
 set background=dark
-let g:Powerline_symbols = "unicode"
+let g:airline_powerline_fonts = 1
 nmap <leader>q :nohlsearch<CR>
 nmap ; :CtrlPBuffer<CR>
 nmap <silent> <leader>s :set spell!<CR>
@@ -45,3 +51,4 @@ autocmd BufRead *.tex setlocal textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.md setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.entry setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
+

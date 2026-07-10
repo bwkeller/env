@@ -52,3 +52,7 @@ autocmd BufRead *.md setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufRead *.entry setlocal smartindent textwidth=80 formatoptions+=t wrap
 autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
 
+if (has("termguicolors"))
+      set termguicolors
+endif
+

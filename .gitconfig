@@ -14,3 +14,5 @@
 	editor = vim
 [pull]
 	rebase = false
+[credential]
+	helper = store
